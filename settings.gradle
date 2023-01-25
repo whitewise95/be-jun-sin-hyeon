@@ -1,0 +1,9 @@
+rootProject.name = 'be-jun-sin-hyeon'
+include("module-core")
+include("module-front")
+
+for (project in rootProject.children) {
+    project.projectDir = file("modules/${project.name}")
+}
+
+
